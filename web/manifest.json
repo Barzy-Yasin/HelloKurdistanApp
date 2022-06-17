@@ -1,6 +1,6 @@
 {
-    "name": "hello_kurdistan_app_",
-    "short_name": "hello_kurdistan_app_",
+    "name": "hello_kurdistan_app",
+    "short_name": "hello_kurdistan_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

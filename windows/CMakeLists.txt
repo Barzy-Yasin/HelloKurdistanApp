@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(hello_kurdistan_app_ LANGUAGES CXX)
+project(hello_kurdistan_app LANGUAGES CXX)
 
-set(BINARY_NAME "hello_kurdistan_app_")
+set(BINARY_NAME "hello_kurdistan_app")
 
 cmake_policy(SET CMP0063 NEW)
 

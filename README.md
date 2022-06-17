@@ -1,4 +1,4 @@
-# hello_kurdistan_app_
+# hello_kurdistan_app
 
 A new Flutter project.
 
