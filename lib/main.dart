@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hello_kurdistan_app/src/AzadiPark.dart';
-
+import 'package:hello_kurdistan_app/src/bicycle_slide.dart';
 
 void main() {
-  runApp(const AzadiPark());
+  runApp(const BicycleSlider());
 }
+
