@@ -70,8 +70,10 @@ class BicycleSliderState extends State<BicycleSlider> {
                       InkWell(
                         onTap: () {
                           setState(() {
+                            if(imgSlider!=img1) {
+                              counter++;
+                            }
                             imgSlider = img1;
-                            counter++;
                           });
                         },
                         child: Card(
@@ -84,8 +86,10 @@ class BicycleSliderState extends State<BicycleSlider> {
                       InkWell(
                         onTap: () {
                           setState(() {
+                            if(imgSlider!=img2) {
+                              counter++;
+                            }
                             imgSlider = img2;
-                            counter++;
                           });
                         },
                         child: Card(
@@ -98,8 +102,10 @@ class BicycleSliderState extends State<BicycleSlider> {
                       InkWell(
                         onTap: () {
                           setState(() {
+                            if(imgSlider!=img3) {
+                              counter++;
+                            }
                             imgSlider = img3;
-                            counter++;
                           });
                         },
                         child: Card(
@@ -112,8 +118,10 @@ class BicycleSliderState extends State<BicycleSlider> {
                       InkWell(
                         onTap: () {
                           setState(() {
+                            if(imgSlider!=img4) {
+                              counter++;
+                            }
                             imgSlider = img4;
-                            counter++;
                           });
                         },
                         child: Card(
