@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_kurdistan_app/bike/bike_data.dart';
+import 'package:hello_kurdistan_app/models/recipe.dart';
 
 class StudentDetailsScreenView extends StatelessWidget {
   const StudentDetailsScreenView({Key? key, required this.index})
@@ -30,18 +31,22 @@ class StudentDetailsScreenView extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Image.asset(
-                        bikeData[index]["image"].toString(),
+                        // bikeData[index]["image"].toString(),
+                        Recipe.bikes[index].image.toString(),
                         alignment: Alignment.topCenter,
                       ),
                       Text(
                         "\n\nBrand:  " +
-                            bikeData[index]["name"].toString() +
+                            // bikeData[index]["name"].toString() +
+                            Recipe.bikes[index].name.toString() +
                             "\n" +
                             "Type:    " +
-                            bikeData[index]["type"].toString() +
+                            // bikeData[index]["type"].toString() +
+                            Recipe.bikes[index].type.toString() +
                             "\n" +
                             "Price:   " +
-                            bikeData[index]["price"].toString() +
+                            // bikeData[index]["price"].toString() +
+                            Recipe.bikes[index].price.toString() +
                             " \$ \n\n" +
                             "    Description:",
                         style: const TextStyle(
@@ -57,7 +62,8 @@ class StudentDetailsScreenView extends StatelessWidget {
                           width: 310,
                           height: 220,
                           child: Text(
-                            bikeData[index]["description"].toString(),
+                            // bikeData[index]["description"].toString(),
+                            Recipe.bikes[index].description.toString(),
                             style: const TextStyle(
                               fontSize: 18,
                               color: Colors.white,

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hello_kurdistan_app/bike/bike_data.dart';
+import 'package:hello_kurdistan_app/models/recipe.dart';
+// import 'package:hello_kurdistan_app/models/recipe.dart';
 import 'package:hello_kurdistan_app/src/screens/assignment_9/bicycles_details_screen_view.dart';
+
 
 class StudentHomeScreenView extends StatefulWidget {
   const StudentHomeScreenView({Key? key}) : super(key: key);
@@ -40,7 +43,8 @@ class _StudentHomeScreenViewState extends State<StudentHomeScreenView> {
             child: Expanded(
               // flex: 5,
               child: ListView.builder(
-                itemCount: bikeData.length,
+                // itemCount: bikeData.length,
+                itemCount: Recipe.bikes.length,
                 itemBuilder: (context, index) {
                   return Stack(
                     alignment: Alignment.bottomCenter,
@@ -52,7 +56,8 @@ class _StudentHomeScreenViewState extends State<StudentHomeScreenView> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.asset(
-                            bikeData[index]["image"].toString(),
+                            // bikeData[index]["image"].toString(),
+                            Recipe.bikes[index].image.toString(),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -84,7 +89,8 @@ class _StudentHomeScreenViewState extends State<StudentHomeScreenView> {
                                 vertical: 10.0, horizontal: 40.0),
                           ),
                           child: Text(
-                            bikeData[index]["name"].toString(),
+                            // bikeData[index]["name"].toString(),
+                            Recipe.bikes[index].name.toString(),
                             textAlign: TextAlign.center,
                             style: const TextStyle(
                               fontSize: 20,
